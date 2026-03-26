@@ -14,10 +14,10 @@ function start() {
     document.body.appendChild(heading);
 
     // Prompting user to add names for attendence
-    prompt("Put in name");
+    let userName = prompt("Put in name");
 
     // Printing name inputted
-    console.log("userName");
+    console.log(userName);
 
     addName(userName);
 }
@@ -28,8 +28,8 @@ function addName(newName) {
     let secondHeading = document.createElement("h2");
 
     // Set text and its style
-    heading.innerText = "newName";
+    secondHeading.innerText = newName;
 
     // Add h2 to page
-    document.body.appendChild(secondHeading)
+    document.body.appendChild(secondHeading);
 }
